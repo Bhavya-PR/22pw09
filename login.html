@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 20px;
+                padding: 20px;
+            }
+            form {
+                display: inline-block;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            label {
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            input[type="submit"] {
+                margin-top: 10px;
+                background-color: #28a745;
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/login_detail" method="post">
+            <label for="username">Email</label>
+            <input type="email" name="username" id="username" placeholder="xxx@gmail.com">
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

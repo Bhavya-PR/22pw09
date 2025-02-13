@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add User</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+            }
+            form {
+                max-width: 400px;
+                margin: auto;
+                padding: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            label {
+                font-weight: bold;
+                display: block;
+                margin-top: 10px;
+            }
+            input {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            input[type="submit"] {
+                background-color: #28a745;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                margin-top: 15px;
+            }
+            input[type="submit"]:hover {
+                background-color: #218838;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Add User</h1>
+        <form action="/add_user_into_db" method="POST">
+            <label for="carno">Car Number:</label>
+            <input type="text" id="carno" name="carno">
+            
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount">
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
